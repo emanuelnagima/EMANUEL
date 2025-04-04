@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+<style>
+    body{background-color: rgb(83, 83, 83);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+
+}
+    
+</style>
+
+</head>
+<body>
+<h1>Inicio de estudos com DOM</h1>
+<p>aqui vai o resultado</p>
+<p>aprendendo a usar <strong>DOM</strong> em JAVASCRIPT</p> <br>
+<div id="msg"> Clique em mim </div>
+<br>
+
+<h4>Emanuel</h4>
+
+
+<script>
+    window.document.write('Olá Mundo!!') 
+
+    //curiosidades
+    window.document.write(window.document.URL)
+
+    window.document.write(window.document.charset)
+
+    window.document.write(window.navigator)
+
+
+//não é necessario utilizar a tag window
+
+
+
+var d = window.document.getElementById('msg')
+d.style.background='green'
+
+var corpo = window.document.body
+var p1 = window.document.getElementsByTagName('p')[1]
+window.document.write(`èsta escrito assim:  ${p1.innerText}`)
+p1.style.color = 'blue'
+corpo.style.background = 'pink'
+
+// outro jeito simplificado
+d.innerText = 'estou aguardando'
+p1.innerHTML = 'olha só, emanuel' 
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <script> 
+
+
+
+//FORMATANDO STRINGS
+var nome = window.prompt('qual é o seu nome?')
+
+//contar numero de caracteres
+document.write(`Olá ${nome}. Seu nome tem ${nome.length} letras <br/>`)
+
+// transformar em maiusculas
+document.write(`Seu nome em letras maisculas fica ${nome.toUpperCase()} <br/>`) 
+
+// transformar em minusculas
+document.write(`Seu nome em letras minusculas fica: ${nome.toLocaleLowerCase()} <br/>`)
+
+
+//FORMATANDO NUMEROS
+n1= Number.parseFloat(window.prompt('Digite um salário'))
+document.write(`O valor é de ${n1.tofixed(2)}`)
+
+
+    </script>
+</body>
+</html>
